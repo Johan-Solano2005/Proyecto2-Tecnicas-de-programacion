@@ -74,6 +74,13 @@ namespace PruebaDeMigrar
         {
             // Esta función se usa para manejar eventos de clic en el DataGridView si es necesario
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Inicio volver = new Inicio();
+            volver.Show();
+            this.Hide();
+        }
     }
 }
 

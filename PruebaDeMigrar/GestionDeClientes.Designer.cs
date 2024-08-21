@@ -40,16 +40,16 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(33, 97);
+            dataGridView1.Location = new Point(33, 89);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(406, 231);
+            dataGridView1.Size = new Size(464, 323);
             dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(33, 43);
+            label1.Location = new Point(213, 33);
             label1.Name = "label1";
             label1.Size = new Size(116, 20);
             label1.TabIndex = 1;
@@ -58,16 +58,16 @@
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(518, 97);
+            dataGridView2.Location = new Point(712, 89);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(403, 231);
+            dataGridView2.Size = new Size(523, 323);
             dataGridView2.TabIndex = 2;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
             // button1
             // 
-            button1.Location = new Point(33, 409);
+            button1.Location = new Point(33, 501);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 3;
@@ -78,7 +78,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(541, 51);
+            label2.Location = new Point(848, 33);
             label2.Name = "label2";
             label2.Size = new Size(120, 20);
             label2.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(987, 450);
+            ClientSize = new Size(1303, 583);
             Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(dataGridView2);

@@ -15,10 +15,21 @@ namespace ClaseControlador
     {
         private readonly IDriver _driver;
 
-        public ControladorDeClientes()
+        public ControladorDeClientes(IDriver driver = null)
         {
-            
-            _driver = GraphDatabase.Driver("bolt://localhost:7687", AuthTokens.Basic("neo4j", "12345678"));
+            _driver = driver ?? GraphDatabase.Driver("bolt://localhost:7687", AuthTokens.Basic("neo4j", "12345678"));
+        }
+
+        // Método para obtener datos simulados
+        public Task<List<Clientes>> ObtenerClientesSimuladosAsync()
+        {
+            var clientesSimulados = new List<Clientes>
+        {
+            new Clientes { Nombre = "Juan Perez", Cedula = 123456, TotalGastado = 100.50m },
+            new Clientes { Nombre = "Maria Gomez", Cedula = 654321, TotalGastado = 200.75m }
+        };
+
+            return Task.FromResult(clientesSimulados);
         }
 
         public async Task<List<Clientes>> ObtenerClientesAsync()
@@ -54,11 +65,6 @@ namespace ClaseControlador
             }
 
             return clientes;
-        }
-
-            public void Dispose()
-        {
-            _driver?.Dispose();
         }
     }
 }
